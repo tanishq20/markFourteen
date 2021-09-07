@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: auto;
+  max-width: 40%;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #004068;
+  font-family: "Comfortaa", cursive;
+  border-radius: 25px;
+}
+
+.header {
+  color: wheat;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.label-input {
+  display: grid;
+  place-items: center;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px;
+  color: white;
+}
+
+input {
+  display: block;
+  width: 50%;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  color: #004068;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+
+#show-btn {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid yellow;
+  background-color: wheat;
+  color: #004068;
+  cursor: pointer;
+  margin: 0.75rem 0;
+}
+
+#show-btn:hover {
+  background-color: #004068;
+  color: white;
+  font-weight: 700;
+}
+
+#output {
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  position: absolute;
+  background: #000000;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}

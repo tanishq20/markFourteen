@@ -36,7 +36,7 @@ function showMessage(msg, color) {
 function calculateProfitAndLoss(buyPrice, sellPrice, qty) {
   if (sellPrice > buyPrice) {
     var profitPrice = (sellPrice - buyPrice) * qty
-    var profitPercentage = (profitPrice / buyPrice) * 100
+    var profitPercentage = ((sellPrice - buyPrice) * 100) / buyPrice
 
     showMessage(
       `Yaay!! Your profit is ${profitPrice} and gain percentage is ${profitPercentage.toFixed(
@@ -46,7 +46,7 @@ function calculateProfitAndLoss(buyPrice, sellPrice, qty) {
     )
   } else if (buyPrice > sellPrice) {
     var lossPrice = (buyPrice - sellPrice) * qty
-    var lossPercentage = (lossPrice / buyPrice) * 100
+    var lossPercentage = ((buyPrice - sellPrice) * 100) / buyPrice
 
     showMessage(
       `Oops Your loss is ${lossPrice} and loss Percentage ${lossPercentage.toFixed(
